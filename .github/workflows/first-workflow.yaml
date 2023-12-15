@@ -19,6 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: multiline commands
-        run: >
-          node -v \
-          npm -v \
+        run: |
+          node -v
+          npm -v

@@ -15,3 +15,11 @@ jobs:
     steps:
       - name: echo a string
         run: Write-Output "Hello Wide New World!"
+  run-with-error:
+    runs-on: ubuntu-latest
+    steps:
+      - name: multiline commands
+        run: |
+        node -v
+        npm -v
+        

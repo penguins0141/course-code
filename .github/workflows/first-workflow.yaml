@@ -9,11 +9,9 @@ jobs:
         run: echo "Hello World"
       - name: node command
         run: node -v
-  run-new-shell-commands:
-    runs-on: ubuntu-latest
+  run-powershell-commands:
+    runs-on: windows-latest
+    needs: [run-shell-commands]
     steps:
       - name: echo a string
-        run: echo "Hello Wide New World!"
-      - name: npm command
-        run: npm -v
-      
+        run: Write-Output "Hello Wide New World!"

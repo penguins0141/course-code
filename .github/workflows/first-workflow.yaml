@@ -5,9 +5,9 @@ jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
+      - name: myhelloworldaction
         run: echo "Hello World"
-      - name: node command
+      - name: mynodeversionaction
         run: node -v
   run-powershell-commands:
     runs-on: windows-latest

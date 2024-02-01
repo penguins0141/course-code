@@ -1,4 +1,4 @@
-name: Setup Local PostgresSQL Database
+name: Install PostgresSQL Database
 on: workflow_dispatch
 
 jobs:

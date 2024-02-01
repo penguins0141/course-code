@@ -1,10 +1,11 @@
-name: Second Workflow
+name: Setup Local PostgresSQL Database
 on: workflow_dispatch
 
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello Wide World"
+      - uses: minesunny/postgresql-action@v1.0.0
+        with:
+          postgresql version: '11'  # See https://hub.docker.com/_/postgres for available versions
      

@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   setup-pg-local:
-    runs-on: [self-hosted, macOS]
+    runs-on: [self-hosted]
     steps:
       - uses: minesunny/postgresql-action@v1.0.0
         with:
